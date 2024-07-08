@@ -69,7 +69,14 @@ function checkAnswer(currentLevel) {
         $('body').addClass("game-over");
         setTimeout(() => {$('body').removeClass("game-over")}, 200);
         $('h1').text("Game Over, Press Any Key to Restar");
+        startOver();
     }
 
-    
+  
+}
+
+function startOver() {
+    level = 0;
+    gamePattern = [];
+    gameIsStarted = false;
 }
